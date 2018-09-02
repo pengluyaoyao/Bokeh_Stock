@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Price from Quandl</title>
+
+    <link
+    href="https://cdn.pydata.org/bokeh/release/bokeh-0.13.0.min.css"
+    rel="stylesheet" type="text/css">
+<link
+    href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.13.0.min.css"
+    rel="stylesheet" type="text/css">
+
+<script src="https://cdn.pydata.org/bokeh/release/bokeh-0.13.0.min.js"></script>
+<script src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.13.0.min.js"></script>
+
+
+</head>
+<body>
+<div class=page>
+<h1> Stock Price from Quandl</h1>
+</div>
+
+<form id='input' method='post' action='/graph'>
+    <p>
+        Please input a ticker(e.g. AAPL): <input type="text" name="ticker_name"/>
+    </p>
+        <input type="checkbox" name='check' value="close"> Close Price <br>
+        <input type="checkbox" name='check' value="adj_close"> Adjusted Close Price <br>
+        <input type="checkbox" name='check' value="open"> Open Price <br>
+        <input type="checkbox" name='check' value="adj_open"> Adjusted Open Price <br>
+    <input type="submit">
+</form>
+
+</body>
+</html>
