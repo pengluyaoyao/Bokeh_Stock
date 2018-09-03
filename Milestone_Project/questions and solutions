@@ -1,0 +1,15 @@
+1. wanted to show the lines by user request, originally, it was p.line1, p.line2, p.line3, p.line4, and alpha=0 for four
+lines, but plot not show.
+Solutions: for i col_active0 (= request.form.getlist('check')): p.line(...)
+
+2. when deploy to heroku, couldn't install packages from requirements.txt
+solutions: git init
+            git add .
+            git commit -m 'initial commit' ##updating the modified files
+            heroku login
+            heroku create
+            git push heroku master
+
+3. plot not show on browser after pushed on heroku
+solutions: using https instead of http in templates html files.
+
