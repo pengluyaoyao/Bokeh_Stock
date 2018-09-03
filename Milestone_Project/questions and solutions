@@ -2,7 +2,7 @@
 lines, but plot not show.
 Solutions: for i col_active0 (= request.form.getlist('check')): p.line(...)
 
-2. when deploy to heroku, couldn't install packages from requirements.txt
+2. when deploy to heroku, couldn't install packages from requirements.txt: no module called flask...
 solutions: git init
             git add .
             git commit -m 'initial commit' ##updating the modified files
@@ -10,6 +10,8 @@ solutions: git init
             heroku create
             git push heroku master
 
-3. plot not show on browser after pushed on heroku
+3. procfile, app:app, first app --> app.py (same as py file name), second app--> app inside the app.py
+
+4. plot not show on browser after pushed on heroku
 solutions: using https instead of http in templates html files.
 
