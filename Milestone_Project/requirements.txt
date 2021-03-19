@@ -5,5 +5,5 @@ pandas==0.20.3
 bokeh==0.13.0
 dill==0.2.8.2
 Flask==0.12.2
-Jinja2==2.9.6
+Jinja2==2.11.3
 pip==9.0.1
